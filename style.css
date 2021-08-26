@@ -1,0 +1,239 @@
+/* Navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: viga;
+    font-size: 32px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+
+}
+
+/* Utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img-ngobar-8/img/jumbotron-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    height: 540px;
+    position: relative;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4{
+    color: white;
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+}
+
+/* info panel */
+.info-panel{
+    background-color: rgb(255, 249, 249);
+    box-shadow: 0 3px 20px rgba(0,0,0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    padding-right: 72px;
+  
+}
+
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p{
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -3px;
+    font-weight: 200;
+}
+
+.row{
+    padding-right: -30px !important;
+    
+  
+
+}
+.row-lg{ 
+   padding-left: 65px !important;
+   padding-top: 20px;
+  
+}
+
+.row-lg p{
+    padding-left: 20px;
+}
+
+/* workingspace */
+
+.workingspace{
+    text-align: center;
+}
+.workingspace .col-lg-6{
+    margin-top: 120px;
+}
+
+.workingspace h3{
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 130px;
+}
+
+.workingspace h3 span{
+    font-weight: 500;
+}
+
+.workingspace p{
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+/* testimoni */
+.testimoni{
+    margin-top: 100px;
+}
+
+.testimoni h5{
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.testimoni .figure img{
+    margin: 20px 10px 5px;
+    width: 60px;
+    opacity: 0.6;
+
+}
+
+.testimoni .figure img.utama{
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+.testimoni .figure h5{
+    color: rgb(43, 43, 43);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.testimoni .figure p{
+    margin-top: -5px;
+    font-size: 12px;
+  
+}
+
+.testimoni figcaption{
+    text-align: center;
+}
+
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+.footer p{
+    color: #acacac;
+    font-size: 18px;
+}
+
+/* Destop */
+@media (min-width: 992px) {
+    .navbar-brand{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0, 0.7) !important;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: white !important ;
+
+    }
+
+   .nav-link:hover::after{
+       content: '';
+       display: block;
+       border-bottom: 3px solid #0B63DC;
+       width: 50%;
+       margin: auto;
+       padding-bottom: 5px;
+       margin-bottom: -8px;
+   }
+
+   .jumbotron{
+    margin-top: -74px;
+    height: 650px;
+   }
+    
+   .jumbotron .display-4{
+        font-size: 64px;
+
+   }
+
+   .workingspace{
+       text-align: left;
+   }
+
+ }
+
+   
+   
+ @media (max-width: 575.98px) {
+    .workingspace h3{
+        margin-top: 30px;
+     
+  }
+
+  .testimoni h5{
+      font-size: 23px;
+  }
+}
