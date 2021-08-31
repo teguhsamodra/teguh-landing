@@ -236,4 +236,11 @@
   .testimoni h5{
       font-size: 23px;
   }
+
+  .navbar a{
+      margin-left: 45px;
+      text-align: center !important;
+      margin-right: 45px;
+      
+  }
 }
